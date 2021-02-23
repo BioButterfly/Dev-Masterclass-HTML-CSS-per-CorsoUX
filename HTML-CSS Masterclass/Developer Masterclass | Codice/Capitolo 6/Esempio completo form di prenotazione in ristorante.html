@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+    <head>
+        <meta charset="utf-8"/> 
+        <title>Il titolo del documento</title>
+        <meta name="description" content="Documento per CorsoUX"/>
+    </head>
+	<body>
+        <form name="prenotazione" action="risposta.php">
+            <fieldset>
+                <legend>Dati Anagrafici</legend>
+                <label>Nome: <input type="text" required/></label>
+                <label>Cognome: <input type="text" required/></label>
+            </fieldset>
+        
+            <fieldset>
+                <legend>A che ora vuoi prenotare?</legend>
+                <input type="radio" name="orario" value="16" required/>16:00
+                <input type="radio" name="orario" value="18"/>18:00
+                <input type="radio" name="orario" value="21"/>21:00
+            </fieldset>
+        
+            <fieldset>
+                <legend>Quali piatti vuoi ordinare?</legend>
+                <input type="checkbox" name="gnocchi-e-pasta-fresca" value="Gnocchi e pasta fresca"/> Gnocchi e pasta fresca
+                <br />
+                <input type="checkbox" name="polenta" value="Polenta"/> Polenta
+                <br />
+                <input type="checkbox" name="contorni" value="Contorni"/> Contorni
+            </fieldset>
+        
+            <fieldset>
+                <legend>Sei allergico a qualcosa?</legend>
+                <select name="allergie" multiple="multiple" required>
+                    <option value="cereali" selected="selected">Cereali</option>
+                    <option value="crostacei">Crostacei</option>
+                    <option value="arachidi">Arachidi</option>
+                </select>
+            </fieldset>
+        
+            <fieldset>
+                <legend>Note</legend>
+                <label>Desideri aggiungere altro?<br>
+                    <textarea name="note" cols="20" rows="5"></textarea>
+                </label>
+            </fieldset> 
+        
+            <br/>
+            <input type="checkbox" name="privacy" value="privacy" required/> Accetto la privacy e le condizioni di vendita<br/><br/>
+        
+               <input type="hidden" name="numero_ordine" value="ordine_1354785129"/>
+        
+            <div>
+                <button type="reset">Annulla</button>
+            </div>
+            <div>
+                <button type="submit">Invia</button>
+            </div>
+        </form>
+	</body>
+</html>
