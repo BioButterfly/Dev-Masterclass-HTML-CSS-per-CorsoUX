@@ -1,0 +1,25 @@
+/* :after e :before */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* In questa istruzione CSS abbiamo un ID, zero classi, zero tag. Quindi la tripletta sarà 1-0-0. */
+#container {
+	color: #000;
+}
+
+/* In questa istruzione CSS abbiamo zero ID, una classe, zero tag. Quindi la tripletta sarà 0-1-0. */
+.text {
+	color: #000;
+}
+
+/* In questa istruzione CSS abbiamo zero ID, zero classi, un tag. Quindi la tripletta sarà 0-0-1. */
+p {
+	color: #000;
+}
+
+/* In questo caso abbiamo due regole (entrambe valide), ma a prevalere sarà la seconda istruzione perché il conteggio delle triplette sarà: 1-0-0 contro 0-0-2. */
+div p {
+	color: #bfbfc0;
+}
