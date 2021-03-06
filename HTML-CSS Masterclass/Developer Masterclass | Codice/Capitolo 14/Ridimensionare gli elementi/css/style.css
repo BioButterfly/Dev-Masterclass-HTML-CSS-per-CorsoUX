@@ -1,0 +1,32 @@
+/* :after e :before */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Mantiene le proporzioni ma non è responsiva */
+img {
+	height: 50px;
+	width: 100px;
+}
+
+/* Calcola in automatico l'altezza mantenendo le proporzioni quando la finestra viene ingrandita o rimpicciolita */
+img {
+	height: auto;
+	width: 100px;
+}
+
+/* Mantiene le proporzioni calcolando l'altezza in automatico e utilizza il 100% della larghezza rispetto al suo contenitore */
+img {
+	height: auto;
+	width: 100%;
+}
+
+.container {
+	width: 300px;
+}
+
+.container img {
+	height: auto;
+	width: 100%;
+}
