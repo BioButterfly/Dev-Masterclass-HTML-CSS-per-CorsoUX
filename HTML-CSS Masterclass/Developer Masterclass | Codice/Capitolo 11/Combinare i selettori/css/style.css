@@ -1,0 +1,14 @@
+/* Combinare i selettori CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div.testo {
+    color: #111;
+}
+
+/* Combiniamo la classe “testo” con l’elemento <p> */
+div.testo p {
+    color: red;
+}

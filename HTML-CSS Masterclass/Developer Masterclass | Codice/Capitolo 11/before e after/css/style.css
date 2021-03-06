@@ -1,0 +1,55 @@
+/* :after e :before */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.testo {
+  margin: 25px;
+}
+
+div.box-1,
+div.box-2 {
+  margin: 15px;
+  border: 1px solid #111;
+}
+
+.divider-1,
+.divider-2 {
+  margin: 15px;
+}
+
+div.box-1:before {
+  content:"";
+  display: block;
+  width: 250px;
+  height: 180px;
+  background-image: url("../assets/immagine.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+div.box-2:after {
+  content:"";
+  display: block;
+  width: 250px;
+  height: 250px;
+  background: #323233;
+  padding: 25px 15px 35px 30px;
+}
+
+div.divider-1:before {
+  content:"";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: #323233;
+}
+
+div.divider-2:after {
+  content:"";
+  display: block;
+  width: 100px;
+  height: 3px;
+  border-bottom: 3px solid #323233;
+}
