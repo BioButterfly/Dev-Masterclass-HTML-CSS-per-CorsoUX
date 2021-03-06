@@ -1,0 +1,34 @@
+/* :after e :before */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div.box-1,
+div.box-2 {
+  margin: 15px;
+  border: 1px solid #111;
+}
+
+/* Regola l'interlinea di un testo */
+.box-1 p {
+  line-height: 1.2;
+}
+
+.box-2 p {
+  line-height: 35px;
+}
+
+/* Regola la Larghezza in px */
+.box {
+  width: 1180px;
+}
+
+/* Regola il font rispetto al body */ 
+body {
+  font-size: 100%;
+}
+
+p {
+  font-size: 1.5em;
+}
