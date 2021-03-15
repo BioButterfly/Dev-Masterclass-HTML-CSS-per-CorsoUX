@@ -1,0 +1,18 @@
+/* Stilizzare i contenitori */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(218, 220, 224);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 25px 50px 25px;
+  height: 100vh;
+}
+

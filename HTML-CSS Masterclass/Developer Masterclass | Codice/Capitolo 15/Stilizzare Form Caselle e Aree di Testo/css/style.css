@@ -1,0 +1,137 @@
+/* Stilizzare un form con i CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(218, 220, 224);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 25px 50px 25px;
+  height: 100vh;
+}
+
+/* Form Generic Style */
+.container form {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container form input,
+.container form select,
+.container form textarea {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+/* Fieldset */
+.container form fieldset {
+    margin: 20px 0 0;
+    padding: 15px 25px 20px;
+    border: 1px solid #ddd;
+}
+
+.container form fieldset legend {
+    padding: 0 5px;
+}
+
+/* Labels */
+.container form label {
+    font-size: 15px;
+}
+
+/* Inputs */
+.container form input {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Inputs Placeholder Text */
+.container form input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ddd;
+    opacity: 1; /* Firefox */
+}
+  
+.container form input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #ddd;
+}
+  
+.container form input::-ms-input-placeholder { /* Microsoft Edge */
+    color: #ddd;
+}
+
+/* Selects */
+.container form select {
+    width: 50%;
+    padding: 10px;
+}
+
+.container form select option {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Textarea */
+.container form textarea {
+    margin: 5px 0 0;
+    padding: 5px 10px;
+    width: 50%;
+    cursor: pointer;
+}
+
+/* Pulsanti */
+
+button {
+    display: inline-block;
+    margin: 0 15px 0 0;
+    padding: 8px 10px;
+    color: #fff;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="reset"] {
+    background: red;
+    border: 1px solid #9c2121;
+}
+
+button[type="submit"] {
+    background: blue;
+    border: 1px solid #2d2db9;
+}
+
+/* Style inputs, select elements and textareas 
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* Style the label to display next to the inputs 
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  /* Style the submit button 
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
